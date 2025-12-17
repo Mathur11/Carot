@@ -48,9 +48,9 @@ test('Login through UI to get Token and Create contact through API', async ({ br
                 LastName: 'jon',
                 ActiveStatusId: '1',
                 CompanyId: '',
-                EmailList: '[dd@gmail.com]',
+                EmailList: '[]',
                 WebsiteList: '[]',
-                PhoneList: '[9090909090]',
+                PhoneList: '[]',
                 IMList: '[]',
                 AddressList: '[]',
                 ConsolidateInvoices: 'false',
@@ -63,7 +63,10 @@ test('Login through UI to get Token and Create contact through API', async ({ br
     );
 
     //  Status validation
+    console.log('Response body:', await response.text());
+
     expect(response.status()).toBe(200);
     console.log('Contact creation response status:', response.status());
+    console.log('Response body:', await response.text());
 
 });
