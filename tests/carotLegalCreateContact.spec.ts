@@ -44,8 +44,8 @@ test('Login through UI to get Token and Create contact through API', async ({ br
             },
 
             form: {
-                FirstName: 'Jake',
-                LastName: 'jon',
+                FirstName: 'los',
+                LastName: 'polos',
                 ActiveStatusId: '1',
                 CompanyId: '',
                 EmailList: '[]',
